@@ -1,0 +1,642 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  *****   Link To Custom CSS Style sheet   *****  -->
+	<link rel="stylesheet"  href="{% static 'css/style.css' %}">
+
+	<!--  *****   Link To Font Awsome Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!--   ***** Link To Magnific Popup CSS *****   -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+
+	<!--   ***** Links To OwlCarousel CSS *****   -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sandeep Portfolio</title>
+	<link rel="icon" type="image/png" href="{% static 'images/icon.png' %}">
+
+</head>
+<body>
+<!--   *** Website Container Starts ***   -->
+<div class="Website-container">
+	
+<!--   *** Home Section Starts ***   -->
+<section class="home" id="home">
+	
+	<!--   === Navbar Starts ===   -->
+	<nav class="navbar">
+		<div class="logo">
+			<a href="#home"><img src="{% static 'images/logo.png' %}"></a>
+		</div>
+
+		<ul class="nav-links">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#expertise">Expertise</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			{% comment %} <li><a href="#testimonials">Reviews</a></li> {% endcomment %}
+			<li><a href="#blogs">My Blogs</a></li>
+		</ul>
+
+		<a href="#contactForm" class="button-wrapper">
+			<button class="btn contact-btn">Contact</button>
+		</a>
+
+		<div class="menu-btn">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</nav>
+	<!--   === Navbar Ends ===   -->
+
+	<!--   === Hero Starts ===   -->
+	<div class="hero">
+		<div class="hero-text">
+			<h3>Hey, There</h3>
+			<h1>I am Sandeep Timalsina</h1>
+			<h2>Backend Developer</h2>
+			<p>I am Bachelor Student in Information Technology. I have expertise in Backend development using Django and Flask.</p>
+		</div>
+
+		<div class="hero-image">
+			<img src="{% static 'images/hero-image.png' %}">
+		</div>
+	</div>
+	<!--   === Hero Ends ===   -->
+
+	<!--   === Career Bar Starts ===  -->
+	<div class="career-container">
+		<div class="career-item">
+			<span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+			<span class="career-desc">
+				<h2>6 month of</h2>
+				<p>Experience</p>
+			</span>
+		</div>
+
+		<div class="career-item">
+			<span class="icon"><i class="fa-solid fa-file"></i></span>
+			<span class="career-desc">
+				<h2>10+ Projects</h2>
+				<p>Completed</p>
+			</span>
+		</div>
+
+		<div class="career-item">
+			<span class="icon"><i class="fa-solid fa-heart"></i></span>
+			<span class="career-desc">
+				<h2>Good</h2>
+				<p>Documentations</p>
+			</span>
+		</div>
+	</div>
+	<!--   === Career Bar Ends ===  -->
+
+</section>
+<!--   *** Home Section Ends ***   -->
+
+<!--   *** About Section Starts ***   -->
+<section class="about" id="about">
+	
+	<!--   === About Image Starts ===   -->
+	<div class="about-image">
+		<img src="{% static 'images/about-img.jpg' %}">
+		<div class="social-media">
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-linkedin-in"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+	</div>
+	<!--   === About Image Ends ===   -->
+
+	<!--   === About Description Starts ===   -->
+	<div class="about-desc">
+		<h3>About Me</h3>
+		<h2>Professional Backend web Developer having more than 6 month of experience</h2>
+		<p>I am a skilled backend developer with extensive experience in Django, building robust and scalable web applications.</p>
+		<p> I have a strong background in database technologies, including SQL, MongoDB, PostgreSQL, and SQLite, and am proficient in Flask and JavaScript</p>
+		<div class="about-personal-info">
+			<div><span>Name:</span><span>Sandeep Timalsina</span></div>
+			<div><span>Age:</span><span>23 Years</span></div>
+			<div><span>Email:</span><span>sandiptimalsina100@gmail.com</span></div>
+			<div><span>Hobby:</span><span>Gym</span></div>
+		</div>
+		<button class="btn download-btn">Download CV</button>
+	</div>
+	<!--   === About Description Ends ===   -->
+
+</section>
+<!--   *** About Section Ends ***   -->
+
+<!--   *** Services Section Starts ***   -->
+<section class="services reusable" id="expertise">
+	
+	<!--   === Headings Text Starts ===   -->
+	<header class="headings">
+		<h3>Expertise</h3>
+		<h1>I have many Expertise</h1>
+		<p>I am an expert in Python, Django, and SQL, specializing in developing robust and efficient backend systems.</p>
+	</header>
+	<!--   === Headings Text Ends ===   -->
+
+	<!--   === Services Box Container Starts ===   -->
+	<div class="services-container">
+		
+		<div class="service-box">
+			<div class="icon-wrapper">
+				<i class="fa-solid fa-palette"></i>
+			</div>
+			<h2>Python</h2>
+			<p>Expert in Python, creating efficient and scalable solutions.</p>
+			<h3>10+ Projects</h3>
+		</div>
+
+		<div class="service-box">
+			<div class="icon-wrapper">
+				<i class="fa-solid fa-code"></i>
+			</div>
+			<h2>Django</h2>
+			<p>Skilled in Django, developing robust backend systems.</p>
+			<h3>15+ Projects</h3>
+		</div>
+
+		<div class="service-box">
+			<div class="icon-wrapper">
+				<i class="fa-solid fa-mobile-screen"></i>
+			</div>
+			<h2>SQL Databases</h2>
+			<p>Proficient in SQL, designing and managing complex databases./p>
+			<h3>15+ Projects</h3>
+		</div>
+
+	</div>
+	<!--   === Services Box Container Ends ===   -->
+
+</section>
+<!--   *** Services Section Ends ***   -->
+
+<!--   *** Resume Section Starts ***   -->
+<section class="resume reusable" id="resume">
+	
+	<!--   === Headings Text Starts ===   -->
+	<header class="headings">
+		<h3>Resume</h3>
+		<h1>Education & Experience</h1>
+		<p>I have Bachelor's degree in Information Technology and months of hands-on experience in backend development, specializing in Django, Python, and SQL.</p>
+	</header>
+	<!--   === Headings Text Ends ===   -->
+
+	<!--   === Resume Row Starts ===   -->
+	<div class="resume-row">
+		
+		<!--   === Left Column Starts ===   -->
+		<div class="column column-left">
+			<header class="sub-heading">
+				<h2>EDUCATION</h2>
+			</header>
+
+			<main class="resume-contents">
+				<div class="box">
+					<h4>2020 - 2024</h4>
+					<h3>Information Technology (IT)</h3>
+					<p>I am currently studying 7th semester of Bachelor's degree in Information Technology</p>
+					<h5 class="vanue">Bhaktapur Multiple Campus (Tribhuwan University)</h5>
+				</div>
+
+				<div class="box">
+					<h4>2021-2024</h4>
+					<h3>Software Development</h3>
+					<p>I have joined many online bootcamps,organized by Popular universities.</p>
+					<h5 class="vanue">Online Materials</h5>
+				</div>
+
+				<div class="box">
+					<h4>2018 - 2020</h4>
+					<h3>High School Degree</h3>
+					<p>Completed my high school degree in Science with Computer Science as choice</p>
+					<h5 class="vanue">Pentagon Int'l College</h5>
+				</div>
+			</main>
+		</div>
+		<!--   === Left Column Ends ===   -->
+
+		<!--   === Right Column Starts ===   -->
+		<div class="column column-right">
+			<header class="sub-heading">
+				<h2>EXPERIENCE</h2>
+			</header>
+
+			<main class="resume-contents">
+				<div class="box">
+					<h4>2021- 2022</h4>
+					<h3>Backend Developer</h3>
+					<p>I have successfully contributed to the development of robust and scalable web applications, managing complex databases, and ensuring the seamless integration of backend functionalities.</p>
+					<h5 class="vanue">---------</h5>
+				</div>
+
+				<div class="box">
+					<h4>2022- 2022</h4>
+					<h3>Front-End Web Developer</h3>
+					<p>I have successfully contributed in projects related to frontend using React and tailwind css.</p>
+					<h5 class="vanue">----------</h5>
+				</div>
+
+				<div class="box">
+					<h4>2024</h4>
+					<h3>Python</h3>
+					<p>I have good knowledge of Data science in python using libraries like pandas,numpy etc.</p>
+					<h5 class="vanue">-----------</h5>
+				</div>
+			</main>
+		</div>
+		<!--   === Right Column Ends ===   -->
+
+	</div>
+	<!--   === Resume Row Ends ===   -->
+
+</section>
+<!--   *** Resume Section Ends ***   -->
+
+<!--   *** Portfolio Section Starts ***   -->
+<section class="portfolio reusable" id="portfolio">
+	
+	<!--   === Headings Text Starts ===   -->
+	<header class="headings">
+		<h3>Portfolio</h3>
+		<h1>Some Of My Latest Works</h1>
+		<p>Below are the projects that are completed and categorized on the basis of difficulty levels.</p>
+	</header>
+	<!--   === Headings Text Ends ===   -->
+
+	<main class="mainContainer">
+		
+		<!--   === Buttons Group Starts ===   -->
+		<div class="button-group">
+			<button class="button active" data-filter="*">All Levels</button>
+			<button class="button" data-filter=".design">Intermediate level</button>
+			<button class="button" data-filter=".code">Expert level</button>
+			<button class="button" data-filter=".logo">Production Level</button>
+		</div>
+		<!--   === Buttons Group Ends ===   -->
+
+		<!--   === Gallery Starts ===   -->
+		<div class="gallery">
+			
+			<!--   === Item1 Starts ===   -->
+			<div class="item design">
+				<img src="{% static 'images/design1.jpg' %}">
+				<div class="overlay">
+					<a href="images/design1.jpg">VIEW MORE</a>
+				</div>
+			</div>
+			<!--   === Item1 Ends ===   -->
+
+			<!--   === Item2 Starts ===   -->
+			<div class="item design">
+				<img src="{% static 'images/design2.jpg' %}">
+				<div class="overlay">
+					<a href="images/design2.jpg">VIEW MORE</a>
+				</div>
+			</div>
+			<!--   === Item2 Ends ===   -->
+
+			<!--   === Item3 Starts ===   -->
+			<div class="item code">
+				<img src="{% static 'images/website1.jpg' %}">
+				<div class="overlay">
+					<a href="images/website1.jpg">VIEW MORE</a>
+				</div>
+			</div>
+			<!--   === Item3 Ends ===   -->
+
+			<!--   === Item4 Starts ===   -->
+			<div class="item code">
+				<img src="{% static 'images/website2.jpg' %}">
+				<div class="overlay">
+					<a href="images/website2.jpg">VIEW MORE</a>
+				</div>
+			</div>
+			<!--   === Item4 Ends ===   -->
+
+			<!--   === Item5 Starts ===   -->
+			<div class="item code">
+				<img src="{% static 'images/website3.jpg' %}">
+				<div class="overlay">
+					<a href="images/website3.jpg">VIEW MORE</a>
+				</div>
+			</div>
+			<!--   === Item5 Ends ===   -->
+
+			<!--   === Item6 Starts ===   -->
+			<div class="item logo">
+				<img src="{% static 'images/logo1.jpg' %}">
+				<div class="overlay">
+					<a href="images/logo1.jpg">VIEW MORE</a>
+				</div>
+			</div>
+			<!--   === Item6 Ends ===   -->
+
+		</div>
+		<!--   === Gallery Ends ===   -->
+
+	</main>
+
+</section>
+<!--   *** Portfolio Section Ends ***   -->
+
+<!--   *** Testimonials Section Starts ***   -->
+{% comment %} <section class="testimonials reusable" id="testimonials">
+	
+	<!--   === Headings Text Starts ===   -->
+	<header class="headings">
+		<h3>Testimonials</h3>
+		<h1>What People Say</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</header>
+	<!--   === Headings Text Ends ===   -->
+
+	<!--   === Owl Carousel Slider Container Starts ===   -->
+	<div class="owl-carousel owl-theme testimonials-container">
+
+		<!--   === Card1 Starts ===   -->
+    	<div class="item testimonial-card">
+    		<main class="test-card-body">
+    			<div class="quote">
+    				<i class="fa fa-quote-left"></i>
+    				<h2>Awesome Coding</h2>
+    			</div>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    			<div class="ratings">
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    			</div>
+    		</main>
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="{% static 'images/profile1.jpg' %}">
+    			</div>
+    			<div class="profile-desc">
+    				<span>John Doe</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!--   === Card1 Ends ===   -->
+
+    	<!--   === Card2 Starts ===   -->
+    	<div class="item testimonial-card">
+    		<main class="test-card-body">
+    			<div class="quote">
+    				<i class="fa fa-quote-left"></i>
+    				<h2>Unique Design</h2>
+    			</div>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    			<div class="ratings">
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    			</div>
+    		</main>
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="{% static 'images/profile2.jpg' %}">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Jane Doe</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!--   === Card2 Ends ===   -->
+
+    	<!--   === Card3 Starts ===   -->
+    	<div class="item testimonial-card">
+    		<main class="test-card-body">
+    			<div class="quote">
+    				<i class="fa fa-quote-left"></i>
+    				<h2>Just Awesome</h2>
+    			</div>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    			<div class="ratings">
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    			</div>
+    		</main>
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="{% static 'images/profile3.jpg' %}">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Albert Smith</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!--   === Card3 Ends ===   -->
+
+    	<!--   === Card4 Starts ===   -->
+    	<div class="item testimonial-card">
+    		<main class="test-card-body">
+    			<div class="quote">
+    				<i class="fa fa-quote-left"></i>
+    				<h2>Awesome Coding</h2>
+    			</div>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    			<div class="ratings">
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    			</div>
+    		</main>
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="{% static 'images/profile4.jpg' %}">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Person Name</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!--   === Card4 Ends ===   -->
+
+    	<!--   === Card5 Starts ===   -->
+    	<div class="item testimonial-card">
+    		<main class="test-card-body">
+    			<div class="quote">
+    				<i class="fa fa-quote-left"></i>
+    				<h2>Simple Ways</h2>
+    			</div>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    			<div class="ratings">
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    			</div>
+    		</main>
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="{% static 'images/profile5.jpg' %}">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Person Name</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!--   === Card5 Ends ===   -->
+
+    	<!--   === Card6 Starts ===   -->
+    	<div class="item testimonial-card">
+    		<main class="test-card-body">
+    			<div class="quote">
+    				<i class="fa fa-quote-left"></i>
+    				<h2>Awesome Coding</h2>
+    			</div>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    			<div class="ratings">
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    				<i class="fa-solid fa-star"></i>
+    			</div>
+    		</main>
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="{% static 'images/profile6.jpg' %}">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Etimad Khan</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    	</div>
+    	<!--   === Card6 Ends ===   -->
+
+	</div>
+	<!--   === Owl Carousel Slider Container Ends ===   -->
+
+</section> {% endcomment %}
+<!--   *** Testimonials Section Ends ***   -->
+
+<!--   *** Contact Section Starts ***   -->
+<section class="contact-form" id="contactForm">
+	<div class="contact-row">
+		
+		<!--   === Left Column Starts ===   -->
+		<div class="contact-col column-1">
+			<div class="contactTitle">
+				<h2>Get In Touch</h2>
+				<p>Please include your email inside the "Purpose of email" too with format as (Your Email) at the top. </p>
+			</div>
+
+	        <form action = "home/" method = "post" class="form-1">
+				{% csrf_token %}
+				<div class="inputGroup">
+					<input type="text" id="subject" name="subject" required="required">
+					<label>Subject</label>
+				</div>
+
+				<div class="inputGroup">
+					<input type="email" id="from_email" name="from_email" required="required">
+					<label>Your email address</label>
+				</div>
+			
+
+			<div class="contactSocialMedia">
+				<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+			</div>
+			<!----This is section for handling sucess and error messages-->
+			{% if form.errors %}
+        <script>
+            // Display each error message as an alert
+            {% for field, error_list in form.errors.items %}
+                {% for error in error_list %}
+                    window.alert("Error: {{ error }}");
+                {% endfor %}
+            {% endfor %}
+        </script>
+    {% endif %}
+	{% if success_message %}
+	<script>
+		// Display success message as an alert
+		window.alert("Success: {{ success_message }}");
+	</script>
+{% endif %}
+		</div>
+		<!--   === Left Column Ends ===   -->
+
+		<!--   === Right Column Starts ===   -->
+		<div class="contact-col column-2">
+			<div class="form-2">
+				<div class="inputGroup">
+					<textarea required="required" id="message" name="message"></textarea>
+					<label>Purpose for the email</label>
+				</div>
+				<button type="submit" class="form-button">EMAIL ME</button>
+			</div>
+		</div>
+	</form>
+		<!--   === Right Column Ends ===   -->
+
+	</div>
+</section>
+<!--   *** Contact Section Ends ***   -->
+
+<!--   *** Footer Section Starts ***   -->
+<section class="page-footer">
+	
+	<footer class="footer-contents">
+		<a href="#">Fell Free to contact me!</a>
+	</footer>
+	
+</section>
+<!--   *** Footer Section Ends ***   -->
+
+
+
+</div>
+<!--   *** Website Container Ends ***   -->
+
+
+
+
+<!--   *** Link To JQuery ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!--   *** Link To Isotope ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+<!--   *** Link To Magnific Popup ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!--   *** Link To OwlCarousel Js ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *** Link To Custom Script File ***   -->
+<script type="text/javascript" src=" {% static 'js/script.js' %}"></script>
+</body>
+</html>
