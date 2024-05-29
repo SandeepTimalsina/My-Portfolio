@@ -1,9 +1,4 @@
 # Environments
 .env
 
-# Byte-compiled
-portfolio/__pycache__/
-portfolio_backend/__pycache__
 
-#for migrations
-portfolio_backend/migrations/
