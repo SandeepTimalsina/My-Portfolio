@@ -1,2 +1,8 @@
 # Environments
 .env
+
+# Byte-compiled
+__pycache__/
+
+#for migrations
+migrations/
