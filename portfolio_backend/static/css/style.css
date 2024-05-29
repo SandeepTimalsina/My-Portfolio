@@ -113,6 +113,9 @@ body{
 	display: inline-block;
 	margin: 0px 18px;
 }
+.navbar ul.nav-links li:hover {
+	cursor: pointer;
+}
 .navbar ul.nav-links li a{
 	position: relative;
 	display: inline-block;
@@ -121,7 +124,7 @@ body{
 	color: var(--links-clr);
 	transition: color 0.4s;
 }
-.navbar ul.nav-links li a::after{
+.navbar ul.nav-links li a{
 	position: absolute;
 	content: '';
 	width: 100%;

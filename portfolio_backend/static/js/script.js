@@ -89,3 +89,5 @@ $('.testimonials-container').owlCarousel({
 
 //for error messages and sucess messages
 // Function to remove messages after 30 seconds
+
+

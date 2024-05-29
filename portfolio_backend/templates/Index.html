@@ -31,17 +31,23 @@
 	<!--   === Navbar Starts ===   -->
 	<nav class="navbar">
 		<div class="logo">
-			<a href="#home"><img src="{% static 'images/logo.png' %}"></a>
+			<a class="home-scroll"><img src="{% static 'images/logo.png' %}"></a>
 		</div>
-
-		<ul class="nav-links">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#expertise">Expertise</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			{% comment %} <li><a href="#testimonials">Reviews</a></li> {% endcomment %}
-			<li><a href="#blogs">My Blogs</a></li>
-		</ul>
+         {% comment %}
+		 This is a area for gsap animation for smooth scrolling in tht website.
+		 {% endcomment %}
+		 <div id="smooth-wrapper">
+			<div id="smooth-content">
+			  <!--- ALL YOUR CONTENT HERE --->
+			  <ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a  href="#expertise">Expertise</a></li>
+                <li><a  href="#portfolio">Portfolio</a></li>
+                <li><a  href="#blogs">My Blogs</a></li>
+			</ul>
+			</div>
+		  </div>
 
 		<a href="#contactForm" class="button-wrapper">
 			<button class="btn contact-btn">Contact</button>
@@ -121,7 +127,7 @@
 		<h3>About Me</h3>
 		<h2>Professional Backend web Developer having more than 6 month of experience</h2>
 		<p>I am a skilled backend developer with extensive experience in Django, building robust and scalable web applications.</p>
-		<p> I have a strong background in database technologies, including SQL, MongoDB, PostgreSQL, and SQLite, and am proficient in Flask and JavaScript</p>
+		<p> I have a strong background in database technologies. </p>
 		<div class="about-personal-info">
 			<div><span>Name:</span><span>Sandeep Timalsina</span></div>
 			<div><span>Age:</span><span>23 Years</span></div>
@@ -635,8 +641,9 @@
 
 <!--   *** Link To OwlCarousel Js ***   -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 <!--   *** Link To Custom Script File ***   -->
-<script type="text/javascript" src=" {% static 'js/script.js' %}"></script>
+	<script type="text/javascript" src=" {% static 'js/script.js' %}"></script>
 </body>
 </html>
